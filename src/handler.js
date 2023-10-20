@@ -73,11 +73,14 @@ const addBookShelfHandler = (request, h) => {
   return response;
 };
 
-const getAllBookShelfHandler = () => ({
-  status: 'success',
-  data: {
-    bookshelf,
-  },
-});
+const getAllBookShelfHandler = (request, h) => {
+  const response = h.response({
+    status: 'success',
+    data: {
+      bookshelf,
+    },
+  });
+  return response;
+};
 
 module.exports = { addBookShelfHandler, getAllBookShelfHandler };
