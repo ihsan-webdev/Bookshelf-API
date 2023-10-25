@@ -12,6 +12,8 @@
         "no-console":"off",
         "linebreak-style":"off",
         "import/no-extraneous-dependencies":"off",
-        "no-param-reassign":"off"
+        "no-param-reassign":"off",
+        "comma-dangle":"off",
+        "no-shadow":"off"
     }
 }

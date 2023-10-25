@@ -17,6 +17,7 @@ const routes = [
     path: '/books',
     handler: getAllBookShelfHandler,
   },
+
   {
     method: 'GET',
     path: '/books/{bookId}',
