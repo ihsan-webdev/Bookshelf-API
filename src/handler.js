@@ -111,8 +111,6 @@ const getAllBookShelfHandler = (request, h) => {
   if (finished === '1') {
     const newBooks = bookShelf.filter((books) => books.finished === true);
 
-    console.log(newBooks);
-
     const books = newBooks.map(
       ({
         year,
@@ -130,8 +128,6 @@ const getAllBookShelfHandler = (request, h) => {
         return rest;
       }
     );
-
-    console.log(books);
 
     const response = h.response({
       status: 'success',
@@ -335,7 +331,6 @@ const editBookShelfByIdHandler = (request, h) => {
       reading,
       updatedAt,
     };
-    console.log(bookShelf[index]);
 
     const response = h.response({
       status: 'success',
